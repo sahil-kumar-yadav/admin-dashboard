@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const SettingSection = ({ icon: Icon, title, children }) => {
+export default function SettingSection ({ icon: Icon, title, children }) {
 	return (
 		<motion.div
 			className='bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg shadow-lg rounded-xl p-6 border border-gray-700 mb-8'
@@ -16,4 +16,3 @@ const SettingSection = ({ icon: Icon, title, children }) => {
 		</motion.div>
 	);
 };
-export default SettingSection;

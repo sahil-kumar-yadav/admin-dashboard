@@ -1,13 +1,12 @@
 import { BarChart2, ShoppingBag, Users, Zap } from "lucide-react";
 import { motion } from "framer-motion";
+import Header from "@/components/common/Header";
+import StatCard from "@/components/common/StatCard";
+import SalesOverviewChart from "@/components/overview/SalesOverviewChart";
+import CategoryDistributionChart from "@/components/overview/CategoryDistributionChart";
+import SalesChannelChart from "@/components/overview/SalesChannelChart";
 
-import Header from "../components/common/Header";
-import StatCard from "../components/common/StatCard";
-import SalesOverviewChart from "../components/overview/SalesOverviewChart";
-import CategoryDistributionChart from "../components/overview/CategoryDistributionChart";
-import SalesChannelChart from "../components/overview/SalesChannelChart";
-
-const OverviewPage = () => {
+export default function OverviewPage(){
 	return (
 		<div className='flex-1 overflow-auto relative z-10'>
 			<Header title='Overview' />
@@ -37,4 +36,3 @@ const OverviewPage = () => {
 		</div>
 	);
 };
-export default OverviewPage;

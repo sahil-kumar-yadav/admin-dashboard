@@ -1,8 +1,9 @@
+"use client";
 import { useState } from "react";
 import SettingSection from "./SettingSection";
 import { HelpCircle, Plus } from "lucide-react";
 
-const ConnectedAccounts = () => {
+export default function ConnectedAccounts() {
 	const [connectedAccounts, setConnectedAccounts] = useState([
 		{
 			id: 1,
@@ -59,4 +60,3 @@ const ConnectedAccounts = () => {
 		</SettingSection>
 	);
 };
-export default ConnectedAccounts;

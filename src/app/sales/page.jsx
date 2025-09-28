@@ -1,11 +1,10 @@
+import Header from "@/components/common/Header";
+import StatCard from "@/components/common/StatCard";
+import SalesOverviewChart from "@/components/overview/SalesOverviewChart";
+import DailySalesTrend from "@/components/sales/DailySalesTrend";
+import SalesByCategoryChart from "@/components/sales/SalesByCategoryChart";
 import { motion } from "framer-motion";
-
-import Header from "../components/common/Header";
-import StatCard from "../components/common/StatCard";
 import { CreditCard, DollarSign, ShoppingCart, TrendingUp } from "lucide-react";
-import SalesOverviewChart from "../components/sales/SalesOverviewChart";
-import SalesByCategoryChart from "../components/sales/SalesByCategoryChart";
-import DailySalesTrend from "../components/sales/DailySalesTrend";
 
 const salesStats = {
 	totalRevenue: "$1,234,567",
@@ -14,7 +13,7 @@ const salesStats = {
 	salesGrowth: "12.3%",
 };
 
-const SalesPage = () => {
+export default function SalesPage(){
 	return (
 		<div className='flex-1 overflow-auto relative z-10'>
 			<Header title='Sales Dashboard' />
@@ -28,7 +27,7 @@ const SalesPage = () => {
 					transition={{ duration: 1 }}
 				>
 					<StatCard name='Total Revenue' icon={DollarSign} value={salesStats.totalRevenue} color='#6366F1' />
-					<StatCard
+					<StatCart
 						name='Avg. Order Value'
 						icon={ShoppingCart}
 						value={salesStats.averageOrderValue}
@@ -53,4 +52,3 @@ const SalesPage = () => {
 		</div>
 	);
 };
-export default SalesPage;

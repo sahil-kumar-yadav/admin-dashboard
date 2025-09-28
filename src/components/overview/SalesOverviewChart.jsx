@@ -1,5 +1,7 @@
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
+"use client";
+
 import { motion } from "framer-motion";
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 
 const salesData = [
 	{ name: "Jul", sales: 4200 },
@@ -16,7 +18,7 @@ const salesData = [
 	{ name: "Jun", sales: 7500 },
 ];
 
-const SalesOverviewChart = () => {
+export default function SalesOverviewChart() {
 	return (
 		<motion.div
 			className='bg-gray-800 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-gray-700'
@@ -52,5 +54,4 @@ const SalesOverviewChart = () => {
 			</div>
 		</motion.div>
 	);
-};
-export default SalesOverviewChart;
+}

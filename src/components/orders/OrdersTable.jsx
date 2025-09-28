@@ -13,7 +13,7 @@ const orderData = [
 	{ id: "ORD008", customer: "Grace Taylor", total: 189.6, status: "Delivered", date: "2023-07-08" },
 ];
 
-const OrdersTable = () => {
+export default function OrdersTable(){
 	const [searchTerm, setSearchTerm] = useState("");
 	const [filteredOrders, setFilteredOrders] = useState(orderData);
 
@@ -118,4 +118,3 @@ const OrdersTable = () => {
 		</motion.div>
 	);
 };
-export default OrdersTable;

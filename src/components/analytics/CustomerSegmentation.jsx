@@ -19,7 +19,7 @@ const customerSegmentationData = [
 	{ subject: "Recency", A: 65, B: 85, fullMark: 150 },
 ];
 
-const CustomerSegmentation = () => {
+export default function CustomerSegmentation(){
 	return (
 		<motion.div
 			className='bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg shadow-lg rounded-xl p-6 border border-gray-700'
@@ -50,4 +50,3 @@ const CustomerSegmentation = () => {
 		</motion.div>
 	);
 };
-export default CustomerSegmentation;

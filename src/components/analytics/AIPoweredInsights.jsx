@@ -24,7 +24,7 @@ const INSIGHTS = [
 	},
 ];
 
-const AIPoweredInsights = () => {
+export default function AIPoweredInsights(){
 	return (
 		<motion.div
 			className='bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg shadow-lg rounded-xl p-6 border border-gray-700'
@@ -46,4 +46,3 @@ const AIPoweredInsights = () => {
 		</motion.div>
 	);
 };
-export default AIPoweredInsights;

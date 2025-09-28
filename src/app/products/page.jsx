@@ -1,14 +1,13 @@
+import Header from "@/components/common/Header";
+import StatCard from "@/components/common/StatCard";
+import CategoryDistributionChart from "@/components/overview/CategoryDistributionChart";
+import ProductsTable from "@/components/products/ProductsTable";
+import SalesTrendChart from "@/components/products/SalesTrendChart";
 import { motion } from "framer-motion";
-
-import Header from "../components/common/Header";
-import StatCard from "../components/common/StatCard";
-
 import { AlertTriangle, DollarSign, Package, TrendingUp } from "lucide-react";
-import CategoryDistributionChart from "../components/overview/CategoryDistributionChart";
-import SalesTrendChart from "../components/products/SalesTrendChart";
-import ProductsTable from "../components/products/ProductsTable";
 
-const ProductsPage = () => {
+
+export default function ProductsPage(){
 	return (
 		<div className='flex-1 overflow-auto relative z-10'>
 			<Header title='Products' />
@@ -38,4 +37,3 @@ const ProductsPage = () => {
 		</div>
 	);
 };
-export default ProductsPage;

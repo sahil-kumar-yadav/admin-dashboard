@@ -11,7 +11,7 @@ const channelData = [
 ];
 const COLORS = ["#8884d8", "#82ca9d", "#ffc658", "#ff8042", "#0088FE", "#00C49F"];
 
-const ChannelPerformance = () => {
+export default function ChannelPerformance(){
 	return (
 		<motion.div
 			className='bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg shadow-lg rounded-xl p-6 border border-gray-700'
@@ -50,4 +50,3 @@ const ChannelPerformance = () => {
 		</motion.div>
 	);
 };
-export default ChannelPerformance;

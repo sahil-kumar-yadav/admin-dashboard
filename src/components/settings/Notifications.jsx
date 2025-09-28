@@ -1,9 +1,11 @@
+"use client";
+
 import { useState } from "react";
 import SettingSection from "./SettingSection";
 import { Bell } from "lucide-react";
 import ToggleSwitch from "./ToggleSwitch";
 
-const Notifications = () => {
+export default function Notifications(){
 	const [notifications, setNotifications] = useState({
 		push: true,
 		email: false,
@@ -30,4 +32,3 @@ const Notifications = () => {
 		</SettingSection>
 	);
 };
-export default Notifications;

@@ -9,7 +9,7 @@ const orderStatusData = [
 ];
 const COLORS = ["#FF6B6B", "#4ECDC4", "#45B7D1", "#FED766", "#2AB7CA"];
 
-const OrderDistribution = () => {
+export default function OrderDistribution(){
 	return (
 		<motion.div
 			className='bg-gray-800 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-gray-700'
@@ -48,4 +48,3 @@ const OrderDistribution = () => {
 		</motion.div>
 	);
 };
-export default OrderDistribution;

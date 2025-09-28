@@ -8,7 +8,7 @@ const overviewData = [
 	{ name: "Page Views", value: "1,234,567", change: 15.7, icon: Eye },
 ];
 
-const OverviewCards = () => {
+export default function OverviewCards(){
 	return (
 		<div className='grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 mb-8'>
 			{overviewData.map((item, index) => (
@@ -49,4 +49,3 @@ const OverviewCards = () => {
 		</div>
 	);
 };
-export default OverviewCards;

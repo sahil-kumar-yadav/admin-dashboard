@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, Cell } from "recharts";
 
@@ -10,7 +12,7 @@ const SALES_CHANNEL_DATA = [
 	{ name: "Social Media", value: 18700 },
 ];
 
-const SalesChannelChart = () => {
+export default function SalesChannelChart()  {
 	return (
 		<motion.div
 			className='bg-gray-800 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 lg:col-span-2 border border-gray-700'
@@ -45,4 +47,3 @@ const SalesChannelChart = () => {
 		</motion.div>
 	);
 };
-export default SalesChannelChart;

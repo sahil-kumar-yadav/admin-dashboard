@@ -9,7 +9,7 @@ const productPerformanceData = [
 	{ name: "Product E", sales: 1890, revenue: 4800, profit: 2181 },
 ];
 
-const ProductPerformance = () => {
+export default function ProductPerformance(){
 	return (
 		<motion.div
 			className='bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg shadow-lg rounded-xl p-6 border border-gray-700'
@@ -41,4 +41,3 @@ const ProductPerformance = () => {
 		</motion.div>
 	);
 };
-export default ProductPerformance;

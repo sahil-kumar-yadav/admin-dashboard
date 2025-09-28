@@ -11,7 +11,7 @@ const dailyOrdersData = [
 	{ date: "07/07", orders: 62 },
 ];
 
-const DailyOrders = () => {
+export default function DailyOrders() {
 	return (
 		<motion.div
 			className='bg-gray-800 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-gray-700'
@@ -42,4 +42,3 @@ const DailyOrders = () => {
 		</motion.div>
 	);
 };
-export default DailyOrders;

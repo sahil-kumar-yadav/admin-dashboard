@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { Edit, Search, Trash2 } from "lucide-react";
 import { useState } from "react";
@@ -10,7 +12,7 @@ const PRODUCT_DATA = [
 	{ id: 5, name: "Coffee Maker", category: "Home", price: 79.99, stock: 78, sales: 720 },
 ];
 
-const ProductsTable = () => {
+export default function ProductsTable(){
 	const [searchTerm, setSearchTerm] = useState("");
 	const [filteredProducts, setFilteredProducts] = useState(PRODUCT_DATA);
 
@@ -112,4 +114,3 @@ const ProductsTable = () => {
 		</motion.div>
 	);
 };
-export default ProductsTable;

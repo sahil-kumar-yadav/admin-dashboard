@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, Legend } from "recharts";
 
@@ -11,7 +13,7 @@ const categoryData = [
 
 const COLORS = ["#6366F1", "#8B5CF6", "#EC4899", "#10B981", "#F59E0B"];
 
-const CategoryDistributionChart = () => {
+export default function CategoryDistributionChart() {
 	return (
 		<motion.div
 			className='bg-gray-800 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-gray-700'
@@ -51,4 +53,3 @@ const CategoryDistributionChart = () => {
 		</motion.div>
 	);
 };
-export default CategoryDistributionChart;

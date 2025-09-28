@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 import { useState } from "react";
@@ -12,7 +14,7 @@ const monthlySalesData = [
 	{ month: "Jul", sales: 7000 },
 ];
 
-const SalesOverviewChart = () => {
+export default function SalesOverviewChart() {
 	const [selectedTimeRange, setSelectedTimeRange] = useState("This Month");
 
 	return (
@@ -56,4 +58,3 @@ const SalesOverviewChart = () => {
 		</motion.div>
 	);
 };
-export default SalesOverviewChart;

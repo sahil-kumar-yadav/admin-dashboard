@@ -1,9 +1,10 @@
+"use client";
 import { Lock } from "lucide-react";
 import SettingSection from "./SettingSection";
 import ToggleSwitch from "./ToggleSwitch";
 import { useState } from "react";
 
-const Security = () => {
+export default function Security(){
 	const [twoFactor, setTwoFactor] = useState(false);
 
 	return (
@@ -25,4 +26,3 @@ const Security = () => {
 		</SettingSection>
 	);
 };
-export default Security;
