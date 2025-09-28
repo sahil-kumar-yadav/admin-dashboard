@@ -1,14 +1,19 @@
+"use client";
+
 import { User } from "lucide-react";
+import Image from "next/image";
 import SettingSection from "./SettingSection";
 
-export default function Profile(){
+export default function Profile() {
 	return (
 		<SettingSection icon={User} title={"Profile"}>
 			<div className='flex flex-col sm:flex-row items-center mb-6'>
-				<img
-					src='https://randomuser.me/api/portraits/men/3.jpg'
+				<Image
+					src='/userimage.png' 
 					alt='Profile'
-					className='rounded-full w-20 h-20 object-cover mr-4'
+					width={80}
+					height={80}
+					className='rounded-full object-cover mr-4'
 				/>
 
 				<div>
@@ -22,4 +27,4 @@ export default function Profile(){
 			</button>
 		</SettingSection>
 	);
-};
+}

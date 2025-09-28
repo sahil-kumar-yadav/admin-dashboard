@@ -1,3 +1,5 @@
+"use client";
+
 import Header from "@/components/common/Header";
 import StatCard from "@/components/common/StatCard";
 import CategoryDistributionChart from "@/components/overview/CategoryDistributionChart";

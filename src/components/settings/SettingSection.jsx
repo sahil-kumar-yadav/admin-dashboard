@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 
 export default function SettingSection ({ icon: Icon, title, children }) {

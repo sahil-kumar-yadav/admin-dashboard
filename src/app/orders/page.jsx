@@ -1,3 +1,4 @@
+"use client";
 import { CheckCircle, Clock, DollarSign, ShoppingBag } from "lucide-react";
 import { motion } from "framer-motion";
 import Header from "@/components/common/Header";

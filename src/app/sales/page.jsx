@@ -1,3 +1,4 @@
+"use client";
 import Header from "@/components/common/Header";
 import StatCard from "@/components/common/StatCard";
 import SalesOverviewChart from "@/components/overview/SalesOverviewChart";
@@ -27,7 +28,7 @@ export default function SalesPage(){
 					transition={{ duration: 1 }}
 				>
 					<StatCard name='Total Revenue' icon={DollarSign} value={salesStats.totalRevenue} color='#6366F1' />
-					<StatCart
+					<StatCard
 						name='Avg. Order Value'
 						icon={ShoppingCart}
 						value={salesStats.averageOrderValue}
